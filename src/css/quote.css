@@ -1,0 +1,56 @@
+.quote {
+  background: #333333;
+  color: #fff;
+
+}
+
+.quote-main {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.quote-main-title {
+  width: 900px;
+  margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  
+}
+
+.quote-box-picture {
+  display: flex;
+  justify-content: center;
+}
+
+
+.quote-author {
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-author-who {
+  font-size: 14px;
+}
+
+
+
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 600px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .quote-main-title {
+        width: 300px;
+        margin-bottom: 22px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+      }
+      .quote-picture img{
+        width: 300px;
+      }
+    }

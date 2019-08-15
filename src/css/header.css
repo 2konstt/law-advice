@@ -1,0 +1,119 @@
+.header {
+
+    background-color: #333333;
+}
+
+.menu {
+    font-size: 24px;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 128px;
+    grid-template-columns: 1/5fr;
+    grid-template-areas: 
+        'l1 l2 logo r1 r2'
+}
+
+.grid-left1 {
+    grid-area: l1;
+    justify-self: end;
+    margin-top: 47px;;
+}
+.grid-left2 {
+    grid-area: l2;
+    justify-self: end;
+    margin-top: 47px;;
+}
+.grid-logo{
+    grid-area: logo;
+    justify-self: center;
+}
+.grid-right1 {
+    grid-area: r1;
+    justify-self: start;
+    margin-top: 47px;;
+}
+.grid-right2 {
+    grid-area: r2;
+    justify-self: start;
+    margin-top: 47px;;
+}
+
+.item {
+    color: #fff;
+}
+
+
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 600px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .menu {
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 64px;
+        grid-template-columns: 1/4fr;
+        grid-template-areas: 
+            'l1 l2  r1 r2'
+    }
+    .grid-logo {
+        display: none;
+    }
+    .grid-left1 {
+        margin-top: 23px;
+        justify-self: center;
+    } 
+    .grid-left2 {
+        margin-top: 23px;
+        justify-self: center;
+    }
+    .grid-right1 {
+        margin-top: 23px;
+        justify-self: center;
+    }
+    .grid-right2 {
+        margin-top: 23px;
+        justify-self: center;
+    }
+}
+
+/* don't work */
+
+@media only screen 
+    and (min-device-width: 600px)
+    and (max-device-wudth: 800px) 
+    and (-webkit-min-device-pixel-ratio: 1)
+    and (orientation: landscape) {
+        .menu {
+            display: grid;
+            grid-template-rows: 64px;
+            grid-template-columns: 1/5fr;
+            grid-template-areas: 
+                'l1 l2 logo r1 r2'
+        }
+        
+        .grid-left1 {
+            grid-area: l1;
+            justify-self: end;
+            margin-top: 23px;
+        }
+        .grid-left2 {
+            grid-area: l2;
+            justify-self: end;
+            margin-top: 23px;
+        }
+        .grid-logo {
+            grid-area: logo;
+            justify-self: center;
+        }
+        .grid-right1 {
+            grid-area: r1;
+            justify-self: start;
+            margin-top: 23px;
+        }
+        .grid-right2 {
+            grid-area: r2;
+            justify-self: start;
+            margin-top: 23px;
+        }
+    }

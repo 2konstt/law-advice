@@ -1,0 +1,99 @@
+.hero {
+  background: linear-gradient(180deg, rgba(58, 120, 254, 0.5) 54.87%, rgba(58, 180, 254, 0.2) 100%),
+   url(../img/O6XN9V0.png);
+  height: 742px;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+.hero-title {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title h2 {
+  width: 700px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.hero-text {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text p {
+  width: 425px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+}
+
+.hero-btn-click {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 312px;
+  height: 82px;
+}
+
+.hero-btn-text {
+  padding-top: 18px;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 600px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .hero-title h2 {
+        width: 300px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .hero-text p {
+        width: 300px;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+      }
+
+      .hero-btn-click {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        border: 2px solid;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+      }
+
+      .hero-btn-text {
+        padding-top: 9px;
+        font-weight: 300;
+        font-size: 25px;
+      }
+    }
+
