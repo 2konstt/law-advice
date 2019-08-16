@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/contactUs.css'
 
+import {Input} from 'semantic-ui-react'
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class ContactUs extends React.Component {
             Напишите нам
           </h3>
         </div>
+        <Input placeholder="asdfg" />
         <div className='contactUs-form-card'>
           <form>
             <div className='contactUs-form-email'>
